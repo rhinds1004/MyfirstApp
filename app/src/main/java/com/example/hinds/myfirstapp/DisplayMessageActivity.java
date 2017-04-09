@@ -39,7 +39,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         super.onStart();
         message = "onStart() called";
         Toast.makeText(this, AC+message, TL).show();
-        Log.i(TAG, AC+message);
+        Log.d(TAG, AC+message);
     }
 
     /** Lifecycle method: Called when the activity begins interacting with the user. */
@@ -64,7 +64,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         message = "onPause() called ()";
         Toast.makeText(this, AC+message, TL).show();
-        Log.i(TAG, AC+message);
+        Log.w(TAG, AC+message);
 
 
 
@@ -76,7 +76,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         super.onRestart();
         message = "onRestart() called";
         Toast.makeText(this, AC+message, TL).show();
-        Log.i(TAG, AC+message);
+        Log.v(TAG, AC+message);
     }
 
     /** Lifecycle method: Called when the activity is no longer visible to the user. */
@@ -85,7 +85,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         super.onStop();
         message = "onStop() called";
         Toast.makeText(this, AC+message, TL).show();
-        Log.i(TAG, AC+message);
+        Log.e(TAG, AC+message);
     }
 
     /** Lifecycle method: The final call received before the activity is destroyed. */
